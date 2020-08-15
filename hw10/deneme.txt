@@ -1,0 +1,43 @@
+data
+23
+  0.0   0.0 P1	// A point at location (0,0) with name “P1”.
+100   0 P2	// A point at location (100,0).
+100.0 100.0 P3
+  0 100	 P4
+  -50 50 P6
+  50 50 P5
+  -50 -50 P7
+  50 -50 P8
+  1 4 P9
+  1 1 P10
+  4 1 P11
+  4 4 P12
+P1 P2 L12 // A line from P1 to P2.
+P2 P3 L23
+P3 P4 L34
+P4 P1 L41
+P1 P3 L31
+P1 P2 P3 P4 PG1     // A polygon with vertices P1, P2, P3 and P4.
+L12 L23 L34 L41 PG2 // A polygon with edges L12, L23, L34 and L41.
+L12 L23 L34 P4 PG3
+P5 P6 P7 P8 PG4
+P9 P10 P11 P12 PG5
+L12 L23 L31 PG6
+
+actions
+berkan.txt
+14
+Distance P1 P2 // Prints the distance between P1 and P2.
+Distance P1 P3
+Distance P1 L34
+Angle L12 L23
+Angle L12 L34
+Angle L31 L41
+Length L41
+Length PG2
+Length PG4
+Area PG1
+Area PG4
+Area PG5
+Area PG2
+Length PG6

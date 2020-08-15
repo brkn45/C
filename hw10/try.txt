@@ -1,0 +1,21 @@
+data
+9
+0 0 P1
+0 -4 P2
+4 -4 P3
+4 0 P4
+P1 P2 L12 
+P2 P3 L23
+P3 P4 L34
+P4 P1 L41
+L12 L23 L34 L41 PG1
+
+actions
+outputs.txt
+6
+Distance P1 P2
+Distance P1 P3
+Angle L12 L23
+Angle L12 L34
+Length PG1
+Area PG1
